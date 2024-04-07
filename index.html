@@ -48,9 +48,10 @@
 			font-size: 1.25rem;
 		}
 
-		.h5-heading {
+		.h6-heading {
 			font-weight: 300;
 			text-align: left;
+			font-size: 1.25rem;
 		}
 
 		.footer {
@@ -65,6 +66,30 @@
 
 		.footer-text:first-of-type {
 			margin-left: 0;
+		}
+
+		@media (max-width: 576px) {
+			.h4-heading {
+				font-size: 1rem;
+			}
+
+			.h6-heading {
+				font-size: 1rem;
+			}
+
+			.footer-text {
+				display: block;
+				margin-left: 0;
+				font-size: 0.9rem;
+			}
+
+			.main-text {
+				text-align: left;
+			}
+
+			.footer {
+				padding-bottom: 0;
+			}
 		}
 
 		.footer a,
@@ -101,9 +126,13 @@
 			</div>
 		</div>
 	</div>
-	<img class="full-width" src="images/uklad1b.jpg" />
-	<div class="cards-2">
-		<div class="ex-basic-1 pt-4">
+	<picture>
+		<source media="(min-width: 576px)" srcset="images/uklad1b.jpg">
+		<source media="(max-width: 575px)" srcset="images/uklad1b_mobile.jpg">
+		<img class="full-width" src="images/uklad1b.jpg" />
+	</picture>
+	<div class="cards-2 main-text">
+		<div class="ex-basic-1 pt-3">
 			<div class="container">
 				<div class="row">
 					<div class="col-xl-10 offset-xl-1">
@@ -119,14 +148,18 @@
 			</div>
 		</div>
 	</div>
-	<img class="full-width" src="images/uklad2.jpg" />
+	<picture>
+		<source media="(min-width: 576px)" srcset="images/uklad2.jpg">
+		<source media="(max-width: 575px)" srcset="images/uklad2_mobile.jpg">
+		<img class="full-width" src="images/uklad2.jpg" />
+	</picture>
 	<div class="cards-2">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-10 offset-xl-1">
-					<h5 class="h5-heading">
+					<h6 class="h6-heading">
 						Doceniona przez:
-					</h5>
+					</h6>
 					<img class="img-fluid mt-5 mb-3" src="images/press_cropped.png" alt="Publications' logos">
 				</div>
 			</div>
@@ -141,7 +174,7 @@
 						<div class="footer-text">
 							<a href="https://www.instagram.com/saintwarsaw_circularfashion" target="_blank">INSTAGRAM</a>
 						</div>
-						<div class="footer-text">© 2024, <a href="/">MONIKA SUROWIEC</a>.</div>
+						<div class="footer-text">© 2024, <a href="/">MONIKA SUROWIEC</a></div>
 					</div>
 				</div>
 			</div>
