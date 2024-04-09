@@ -83,12 +83,26 @@
 				font-size: 0.9rem;
 			}
 
+			.footer-text:first-of-type {
+				padding-bottom: 2.5rem;
+			}
+
 			.main-text {
 				text-align: left;
 			}
+		}
 
+		@media (max-width: 1200px) {
 			.footer {
-				padding-bottom: 0;
+				padding-top: 0;
+			}
+		}
+
+		@media (min-width: 576px) and (max-width: 992px) {
+			.footer-text:last-of-type {
+				display: block;
+				margin-left: 0;
+				margin-top: 1.25rem;
 			}
 		}
 
@@ -156,7 +170,7 @@
 	<div class="cards-2">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-10 offset-xl-1">
+				<div class="col-lg-10 offset-lg-1">
 					<h6 class="h6-heading">
 						Doceniona przez:
 					</h6>
@@ -164,29 +178,33 @@
 				</div>
 			</div>
 		</div>
-		<div class="footer">
-			<div class="container">
-				<div class="row">
-					<div class="col-xl-10 offset-xl-1">
-						<div class="footer-text">
-							<a href="mailto:monikasurowiec@saintwarsaw.com" target="_blank">KONTAKT</a>
-						</div>
-						<div class="footer-text">
-							<a href="https://www.instagram.com/saintwarsaw_circularfashion" target="_blank">INSTAGRAM</a>
-						</div>
-						<div class="footer-text">© 2024, <a href="/">MONIKA SUROWIEC</a></div>
+	</div>
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1">
+					<div class="footer-text">
+						<a href="mailto:monikasurowiec@saintwarsaw.com" target="_blank">INDYWIDUALNE ZAMÓWIENIA</a>
 					</div>
+					<div class="footer-text">
+						<a href="mailto:monikasurowiec@saintwarsaw.com" target="_blank">KONTAKT</a>
+					</div>
+					<div class="footer-text">
+						<a href="https://www.instagram.com/saintwarsaw_circularfashion" target="_blank">INSTAGRAM</a>
+					</div>
+					<div class="footer-text">© 2024, <a href="/">MONIKA SUROWIEC</a></div>
 				</div>
 			</div>
 		</div>
+	</div>
 
-		<!-- Scripts -->
-		<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
-		<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
-		<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
-		<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
-		<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
-		<script src="js/scripts.js"></script> <!-- Custom scripts -->
+	<!-- Scripts -->
+	<script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+	<script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+	<script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+	<script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+	<script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+	<script src="js/scripts.js"></script> <!-- Custom scripts -->
 </body>
 
 </html>
