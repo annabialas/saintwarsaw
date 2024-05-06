@@ -243,10 +243,11 @@
 	<script src="js/scripts.js"></script> <!-- Custom scripts -->
 	<script>
 		const checkLangAndMaybeRedirect = () => {
-			if (navigator.language !== 'pl' || navigator.language !== 'pl-PL') {
-				window.location.replace(`${window.location.origin}/pl.html`)
+			if (navigator.language === 'pl' || navigator.language === 'pl-PL') {
+				window.location.replace(`${window.location.origin}/pl.html`);
+			} else {
+				window.location.replace(`${window.location.origin}/en.html`);
 			}
-			window.location.replace(`${window.location.origin}/en.html`);
 		}
 	</script>
 </body>
